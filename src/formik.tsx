@@ -10,6 +10,8 @@ import {
   values,
 } from './utils';
 
+declare const process: any;
+
 import warning from 'warning';
 
 /**
