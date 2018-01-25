@@ -72,6 +72,12 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-native@^0.52.5":
+  version "0.52.5"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.52.5.tgz#115bce4d15b1adb5f951b2f751e77d8e97b0c77b"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-test-renderer@15.5.2":
   version "15.5.2"
   resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-15.5.2.tgz#422a51a3a1750616f8ca5440d3591ab381d7f1e1"

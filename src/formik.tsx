@@ -1,6 +1,7 @@
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import isEqual from 'lodash.isequal';
+import { GestureResponderEvent } from 'react-native';
 import {
   isEmptyChildren,
   isFunction,
@@ -98,7 +99,9 @@ export interface FormikActions<Values> {
  */
 export interface FormikHandlers {
   /** Form submit handler */
-  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  handleSubmit: (
+    e: React.FormEvent<HTMLFormElement> | GestureResponderEvent
+  ) => void;
   /** Classic React change handler, keyed by input name */
   handleChange: (e: React.ChangeEvent<any>) => void;
   /** Mark input as touched */
