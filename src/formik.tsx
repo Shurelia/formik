@@ -9,10 +9,8 @@ import {
   isReactNative,
   values,
 } from './utils';
-
-declare const process: any;
-
 import warning from 'warning';
+declare const process: { env: { NODE_ENV: string } };
 
 /**
  * Values of fields in the form
@@ -463,7 +461,9 @@ export class Formik<
     );
   };
 
-  handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  handleSubmit = (
+    e: React.FormEvent<HTMLFormElement> | GestureResponderEvent
+  ) => {
     e.preventDefault();
     this.submitForm();
   };
